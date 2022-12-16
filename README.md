@@ -1,6 +1,7 @@
 # JavaScript
 
-All the basics of javascript learnt are documented here along Task 1.
+All the basics of javascript learnt are documented here along with Task 1.
+
 Task 1 is as follows:
 Learn the basics of javascript and create a small webpage which takes the names and marks of ten students and calculates the
 
