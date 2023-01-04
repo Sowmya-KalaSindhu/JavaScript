@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Javascript Beginners</title>
+</head>
+<body>
+Profile Lookup
+</body>
+</html>
+<script>
+var contacts=[
+{
+"firstname":"Akira",
+"lastname":"Laine",
+"likes":["Pizza","Coding","Brownies"]
+},
+{
+"firstname":"Manasa",
+"lastname":"Singh",
+"likes":["Chocolate","Dance","Sleep"]
+},
+{
+"firstname":"Michael",
+"lastname":"Tolland",
+"likes":["Sea","Oceanography","Wind"]
+}
+];
+function lookup(name,prop){
+for(var i=0;i<contacts.length;i++)
+{
+if(contacts[i].firstName===name){
+return contacts[i][prop] || "No such property"
+}
+}
+return "No such contact";
+}
+var data=lookup("Manasa","likes");
+console.log(data);
+</script>
