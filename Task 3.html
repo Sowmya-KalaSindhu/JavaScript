@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html>
+<body>
+
+<title>Pasta Recipe using Promise</title>
+
+</body>
+</html>
+<script>
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+let Ingrediants={
+  Pasta : ["Elbow pasta - 1 cup","Water - 4 cups","salt -  1/2 teaspoon","Butter- 1 cup"],
+  Sauce : ["Butter","Purpose Flour","Milk","Shredded Cheese - 150gms","Black pepper - 1/4 teaspoon"]};
+  let is_shop_open= true;
+  //time and work relationship//
+  let order=(time,work)=>{
+      return new Promise((resolve, reject)=>{
+          if(is_shop_open){
+              setTimeout( ()=>{
+                   resolve(work())
+              },time)
+             
+          }
+          
+          else
+          {
+              reject(console.log("Our restaurant is closed"))
+          }
+      }  );
+  };
+  
+  order(2000,()=>console.log("Mac and cheese was ordered"))
+  //Promise Chaining//
+  
+  .then(()=>{
+      return order(0000,()=>console.log("Cooking the pasta:"));
+  })
+  
+  .then(()=>{
+      return order(0100,()=>console.log("1. Take 1 cup macaroni pasta and cook as instructed on the package"));
+  })
+  
+  .then(()=>{
+      return order(0200,()=>console.log("2.Cook till it is just cooked and drain the pasta in a strainer"));
+  })
+  
+  .then(()=>{
+      return order(2000,()=>console.log("Preparing Sauce:"));
+  })
+  
+  
+  .then(()=>{
+      return order(2100,()=>console.log("1.Heat 3 tablespoons butter in a thick bottomed sauce pan"));
+  })
+  
+  
+  .then(()=>{
+      return order(2200,()=>console.log("2.When butter frothes add 2 tablespoon of flour and whisk quickly"));
+  })
+  
+  .then(()=>{
+      return order(2300,()=>console.log("3.Saute the floor till it bubbles"));
+  })
+  
+  .then(()=>{
+      return order(2400,()=>console.log("4.Pour chilled milk and stir to avoid lumps"));
+  })
+  
+  .then(()=>{
+      return order(2500,()=>console.log("5.When the sauce has thickened, switch off the flame add 1/2 teaspoon of crushed black pepper and pinch of salt"));
+  })
+  
+  .then(()=>{
+      return order(2600,()=>console.log("6.Add cheddar cheese"));
+  })
+  
+  .then(()=>{
+      return order(4000,()=>console.log("Mixing :"));
+  })
+  
+  .then(()=>{
+      return order(4200,()=>{console.log("Pasta is added to White Cheese Sause and mixed thoroughly with spoon")});
+  })
+  
+  .then(()=>{
+      return order(6000,()=>console.log("MAC AND CHEESE READY TO SERVE"));
+  })
+
+//Error handling//
+  .catch(()=>{console.log("Customer left")});
+  
+  /*finally handler
+  
+  .finally(()=>{
+      console.log("Day ended, restaurant closed")
+  });*/
+  
+  </script>
+  
