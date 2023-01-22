@@ -17,9 +17,14 @@ Learn about asynchronous javascript and implement a small callback based program
 Task 3:
 Implement the above recipe program with promises and list the potential benefits and improvements of using the same 
 
-Benefits of using promises are
+# Benefits of using promises are
+
 1.It is a solution for callback hell
+
 2. Makes the code clean and organized
-3. Better error handling
-4. Improves code reusability
-5. Better asynchronous flow control
+
+4. Better error handling
+
+6. Improves code reusability
+
+8. Better asynchronous flow control
