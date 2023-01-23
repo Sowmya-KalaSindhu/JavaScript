@@ -1,0 +1,30 @@
+# Listing out the commands for the tasks
+
+a. Create a folder named test:
+$ mkdir test
+
+b. cd into that folder
+$ cd test
+
+c. Create blank file without using any text editor
+$ touch hi.txt
+
+d. list the files in that folder
+$ ls
+
+e.create 2600 folders in this folder where each folder is named like M90 or B56
+# this can be done using single mkdir command with {} with directories separated by comma
+$ mkdir {A1,A2,A3,A4,A5}
+
+f.concatenate two text files containing any random text and display them on the terminal
+$ touch c1.txt c2.txt
+$ echo "Windows" >c1.txt
+$ echo " using Ubuntu" >c2.txt
+$ cat c1.txt
+   Windows
+$ cat c2.txt
+  using Ubuntu
+$ cat c1.txt c2.txt > c3.txt
+$ cat c3.txt
+ Windows
+  using Ubuntu
