@@ -20,10 +20,8 @@ let Ingrediants={
           if(is_shop_open){
               setTimeout( ()=>{
                    resolve(work())
-              },time)
-             
+              },time)  
           }
-          
           else
           {
               reject(console.log("Our restaurant is closed"))
